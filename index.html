@@ -25,47 +25,76 @@
 
     <!--link css-->
     <link rel="stylesheet" href="style.css">
+
+    <!--script-->
+    <link rel="stylesheet" href="script.js">
     
 </head>
 <body>
-    <li id="menu"><ul><a id="title" href="#Home"><div id="avatar"><img src="image/avatar.webp"></div><div>Xiaohei</div></a></ul></li>
+    <li id="menu">
+        <ul>
+            <a id="title" href="#Home">
+                <div id="avatar">
+                    <img src="image/avatar.webp">
+                </div>
+                <div>
+                    Xiaohei
+                </div>
+            </a>
+        </ul>
+    </li>
     <div id="example">
-    <div class="section home fp-section active fp-table fp-completely" data-fp-styles="null" data-anchor="Home" style="height: 976px; background-color: rgb(40, 44, 52);">
-        <div class="fp-tableCell" style="height: 976px;">
-            <h1>No coding, No thing</h1>
+        <div class="section" data-fp-styles="null" data-anchor="Home" style="height: 976px; background-color: rgb(40, 44, 52);">
+            <div class="home" class="fp-tableCell" style="height: 976px;">
+                <h1>No coding, No thing</h1>
+            </div>
         </div>
-    </div>
     <div class="section" data-fp-styles="null" data-anchor="About-me" style="height: 976px; background-color: rgb(51, 51, 82);">
-        <div class="section" style="height: 976px;">
-            <div  id="about">
+        <div  class="section" style="height: 976px;">
+            <div id="about">
                 <h2>About Me</h2>
                 <p>我只是一個不太會中文的廢物
                     <br>我是在延和國中的廢物</br>
                     <br>I can't python</br>
                     <br>I can't C#</br>
-        </p>
-                    <div id="contact">
-                        <div id="link" class="copy" style="background-color: rgb(0, 77, 170);">
-                            <img src="image/discord.db0b1430.svg">
+                </p>
+                <div id="contact">
+                    <div id="copytxt">
+                    <button type="button" onclick="copyEvent('copyText')">
+                    <div id="link" class="copy" style="background-color: rgb(0, 77, 170);">
+                        <img src="image/discord.db0b1430.svg">
+                        <textarea readonly id="copyText" style="position:absolute;left:-9999px;background-color: rgb(0, 77, 170);">
+                            xiaoheidev
+                        </textarea>
                             <span>
-                                小黑#7414
-                            </span>
-                        </div><a id="link" href="https://twitter.com/wngynho2" style="background-color: rgb(12, 114, 183);">
-                            <img src="image/twitter.4108153b.svg">
-                            <span>@XiaoHei14</span></a>
-                            <a id="link" href="https://github.com/XiaoHei14" style="background-color: rgb(0, 0, 0);">
-                                <img src="image/github.011f8e82.svg"><span>xiaohei</span></a>
-                                <a id="link" href="" style="background-color: rgb(0, 77, 170);">
-                                <img src="image/ajid6-txj2m.svg">
-                                <span>shop</span>
-                                <a id="link" href="" style="background-color: rgb(0, 77, 170);">
-                                <img src="image/rss.30eccc3c.svg">
-                                <span>blog</span>
-                                <a id="link" href="https://www.buymeacoffee.com/xiahey587U" style="background-color: rgb(0, 77, 170);">
-                                    <img src="image/Buy-Me-a-Coffee.svg">
-                                    <span>donate buy coffee</span>
+                                xiaoheidev
+                            </span>                                             
+                    </div>
+                    </button>
+                    </div>
+                    <a id="link" href="https://twitter.com/wngynho2" style="background-color: rgb(12, 114, 183);">
+                        <img src="image/twitter.4108153b.svg">
+                        <span>
+                            @wngynho2
+                        </span>
                     </a>
+                    <a id="link" href="https://github.com/XiaoHei14" style="background-color: rgb(29, 27, 27);">
+                        <img src="image/github.011f8e82.svg">
+                        <span>
+                            XiaoHei14  
+                        </span>
+                    </a>
+                    <a id="link" href="https://www.buymeacoffee.com/xiahey587U" style="background-color: rgb(0, 77, 170);">
+                        <img src="image/Buy-Me-a-Coffee.svg">
+                        <span>donate buy coffee</span>
+                    </a>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="section" data-fp-styles="null" data-anchor="project" style="background-color: #0b0818;">
+        <div class="project">
+            <p>There are my project</p>
         </div>
     </div>
     <script>
@@ -91,5 +120,13 @@
               console.info('Trigger:', e.trigger);
             });
           </script>
+          <script>
+            function copyEvent(id)
+            {
+                var str = document.getElementById(id);
+                window.getSelection().selectAllChildren(str);
+                document.execCommand("Copy")
+            }
+        </script>
 </body>
 </html>

@@ -3,6 +3,54 @@
     padding: 0;
 }
 
+.project {
+    margin: 10px;
+}
+
+#copytxt {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+    width: 137px;
+    height: 50px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 15;
+    text-align: center;
+}
+
+#copytxt button{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+    width: 137px;
+    height: 37px;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: 10;
+    text-align: center;
+}
+
+#copytxt:hover {
+    box-shadow: #0000004d 0 15px 25px
+}
+
+#copytxt span {
+    margin-left: 8px
+}
+
+#copytxt img {
+    height: 100%
+}
+.home {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 .home h1 {
     text-align: center;
     color: #fff;
@@ -18,11 +66,15 @@
     background: -o-linear-gradient(6deg,#e900c0 12%,rgba(255,255,0,.8) 81%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Moco
+    font-family: Moco;
 }
 
 .home h1:hover {
     font-size: 7vw
+}
+
+.dud {
+    color: #757575;
 }
 
 #menu {
@@ -136,7 +188,7 @@
 
 .copy:hover:after {
     z-index: 10;
-    top: -3rem
+    top: -3rem;
 }
 
 #about {
@@ -156,11 +208,11 @@
     text-align: center;
     padding: 20px 40px;
     color: #fff
-    background:linear-gradient(6deg,#e900c0 12%,rgba(255,255,0,.8) 81%);
+    backgroundlinear-gradient(6deg,#e900c0 12%,rgba(255,255,0,.8) 81%);
     background:-moz-linear-gradient(6deg,#e900c0 12%,rgba(255,255,0,.8) 81%);
     background:-webkit-linear-gradient(6deg,#e900c0 12%,rgba(255,255,0,.8) 81%);
     background:-o-linear-gradient(6deg,#e900c0 12%,rgba(255,255,0,.8) 81%);
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 
