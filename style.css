@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'MantouSans';
+    src: url('/ttf/MantouSans-Regular.ttf');
+}
+
 .project {
     margin: 10px;
 }
